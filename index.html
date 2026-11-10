@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Flashcard Quiz App</h1>
+        <p>Learn, Practice and Remember!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section">
+            <h2>My Flashcards</h2>
+            <p id="progress">Card 1 of 5</p>
+
+            <div class="flashcard" id="flashcard">
+                <h3 id="card-label">QUESTION</h3>
+                <p id="card-content">Loading question...</p>
+            </div>
+
+            <button id="showAnswerBtn" class="answer-btn">
+                Show Answer
+            </button>
+
+            <div class="navigation">
+                <button id="prevBtn">← Previous</button>
+                <button id="nextBtn">Next →</button>
+            </div>
+        </section>
+
+        <section class="manage-section">
+            <h2>Manage Flashcards</h2>
+
+            <form id="cardForm">
+                <label for="question">Question:</label>
+                <input type="text" id="question"
+                    placeholder="Enter your question" required>
+
+                <label for="answer">Answer:</label>
+                <textarea id="answer"
+                    placeholder="Enter your answer" required></textarea>
+
+                <button type="submit" id="saveBtn">
+                    Add Flashcard
+                </button>
+
+                <button type="button" id="cancelBtn" hidden>
+                    Cancel Edit
+                </button>
+            </form>
+
+            <div class="card-actions">
+                <button id="editBtn">Edit Current Card</button>
+                <button id="deleteBtn">Delete Current Card</button>
+            </div>
+
+            <p id="message" role="status"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created for CodeAlpha Internship | Flashcard Quiz App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

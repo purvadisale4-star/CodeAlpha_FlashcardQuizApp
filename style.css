@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f0ff;
+    color: #292344;
+    min-height: 100vh;
+}
+
+header {
+    background: #6651b8;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.study-section,
+.manage-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #6651b8;
+    margin-bottom: 20px;
+}
+
+#progress {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+.flashcard {
+    min-height: 220px;
+    background: #eee9ff;
+    border: 2px solid #d7cbff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+.flashcard h3 {
+    color: #8069d4;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.flashcard p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.answer-btn,
+#saveBtn {
+    background: #6651b8;
+    color: white;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.navigation button {
+    background: #e2dcff;
+    color: #45358a;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+#saveBtn {
+    margin-top: 15px;
+}
+
+#cancelBtn {
+    background: #ddd;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-actions button {
+    flex: 1;
+    background: #e9e3ff;
+    color: #45358a;
+}
+
+#deleteBtn {
+    background: #ffe1e1;
+    color: #a52a2a;
+}
+
+#message {
+    margin-top: 15px;
+    color: #6651b8;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+}
